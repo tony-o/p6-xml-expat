@@ -1,0 +1,16 @@
+<xml>
+  <!-- comment in XML! -->
+  <a>
+    in a<one parent="a1" />out a
+  </a>
+  <b>
+    <two parent parent2>
+      inside of two
+    </two>
+  </b>
+  <cdat>
+<!--    <![CDATA[
+      <some <invalid <xml>>
+    ]]>-->
+  </cdat>
+</xml>
