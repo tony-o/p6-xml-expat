@@ -54,3 +54,13 @@ sub XML_SetCdataSectionHandler(OpaquePointer, &start (OpaquePointer), &end (Opaq
   returns Pointer[void]
   is native('expat')
   is export { * };
+
+sub XML_SetDoctypeDeclHandler (OpaquePointer, &start (OpaquePointer, Str, Str, Str, int32), &end (OpaquePointer))
+  returns Pointer[void]
+  is native('expat')
+  is export { * }; 
+
+sub XML_SetXmlDeclHandler(OpaquePointer, &decl (OpaquePointer, Str, Str, int32))
+  returns Pointer[void]
+  is native('expat')
+  is export { * };
